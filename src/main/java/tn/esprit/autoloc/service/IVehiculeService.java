@@ -10,4 +10,8 @@ public interface IVehiculeService {
     Vehicule updateVehicule(Vehicule v);
     Vehicule retrieveVehicule(Long idVehicule);
     void removeVehicule(Long idVehicule);
+
+    Vehicule affecterVehicule(Long idVehicule, Long idAgence);
+    Vehicule affecterEquipement(Long idVehicule, Long idEquipement);
+    Vehicule desaffecterEquipement(Long idVehicule, Long idEquipement);
 }
